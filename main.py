@@ -21,6 +21,9 @@ def read_item(item_id: int, q: Optional[str] = None):
 def make_predictions(dataModel: DataModel):
     df = pd.DataFrame(dataModel.dict(), columns=dataModel.dict().keys(), index=[0])
     df.columns = dataModel.columns()
+    print("=11=============================")
     model = load("assets/modelo.joblib")
+    print("===22===========================")
+    print(type(model))
     result = model.predict(df)
     return result

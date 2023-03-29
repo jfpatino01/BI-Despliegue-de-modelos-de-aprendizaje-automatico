@@ -17,4 +17,4 @@ class DataModel(BaseModel):
 
 #Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
     def columns(self):
-        return ['year', 'km_driven', 'owner', 'seller_type', 'seats', 'fuel', 'transmission', 'mileage', 'engine', 'max_power', 'selling_price']
+        return ['year', 'km_driven', 'owner', 'seller_type', 'seats', 'fuel', 'transmission', 'mileage', 'engine', 'max_power']
